@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/csvupload/db" VERSION="2024091400" COMMENT="CSV Upload plugin">
+    <TABLE NAME="local_csvupload" COMMENT="Stores uploaded CSV data">
+        <FIELDS>
+            <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+            <FIELD NAME="firstname" TYPE="char" LENGTH="100" NOTNULL="true" />
+            <FIELD NAME="lastname" TYPE="char" LENGTH="100" NOTNULL="true" />
+            <FIELD NAME="email" TYPE="char" LENGTH="100" NOTNULL="true" />
+            <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" />
+        </FIELDS>
+        <KEYS>
+            <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        </KEYS>
+    </TABLE>
+</XMLDB>
